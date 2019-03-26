@@ -4,8 +4,8 @@
 
 {% block styles%}
 {{block.super}}
-<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Concert+One|Overlock" rel="stylesheet">
-<link rel="stylesheet" href="{% static 'css/hood.css' %}">
+
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
 {% endblock %}
 
 
@@ -39,7 +39,7 @@
         <div class="tab-content">
             <div class="tab-pane fade in active" id="biz">
 
-                <a href="{%url 'createpost'%}" class="btn btn-success btn btn-sm"><span class="glyphicon glyphicon-plus">
+                <a href="{%url 'createpost'%}" class="btn btn-Primary btn btn-sm"><span class="glyphicon glyphicon-plus">
                         Create post</span></a>
 
                 {% if posts %}
@@ -49,7 +49,7 @@
                 </ul>
                 {% endfor %}
                 {%else%}
-                    <p>There are no posts yet</p>
+                    <p>There are no posts yet, please post some for your felow neighbours. Motivational post are also allowed</p>
                 {% endif %}
 
             </div>
@@ -76,7 +76,7 @@
                 </table>
               
                 {%else%}
-                    <p>There are no listed businesses yet</p>
+                    <p>Lets start a business, making some delicous cupcakes,post it here</p>
                 {% endif %}
 
             </div>

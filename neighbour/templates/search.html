@@ -12,7 +12,7 @@
   
   <div class="row">
     {% if hood %}
-      <h2 style="color:whitesmoke;">Found {{ hood|length }} of searched term {{message}}</h2>
+      <h2 style="color:greenyellow;">Found {{ hood|length }} of searched term {{message}}</h2>
     {% else %}
       <h2> Found 0 hoods for the search term {{message}}</h2>
     {% endif %}
@@ -28,7 +28,7 @@
   <div class="panel panel-info">
     <div class="panel-heading">{{hood.name}}</div>
     <div class="panel-body">
-    <p class="desc">{{hood.description}}</p>
+    <p>{{hood.description}}</p>
      <p class="locale">{{hood.location}}</p>
     </div>
     <div class="panel-footer">
