@@ -86,7 +86,7 @@ user makes a post      |                      page loads the new made post
 
 -To test the app, run this commands in the terminal.
 
-`$ python3.6 manage.py test.py main`
+`$ python3.6 manage.py test`
 
 ## Contact Information
 
