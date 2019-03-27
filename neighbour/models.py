@@ -113,11 +113,11 @@ class Business(models.Model):
 
 
 class Join(models.Model):
- models.OneToOneField(User)
+    models.OneToOneField(User)
     hood = models.ForeignKey(Neighbour)
 
     def __str__(self):
-        return self.user
+            return self.user
 
 
 class Posts(models.Model):
